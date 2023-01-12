@@ -1,0 +1,29 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.ChannelCard {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 250px;
+
+    &_Content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: $main-text-colour;
+
+        &_Img {
+            border-radius: 50%;
+            height: 100px;
+        }
+
+        &_Title {
+            font-size: 1.2rem;
+            color: $main-text-colour;
+        }
+    }
+}

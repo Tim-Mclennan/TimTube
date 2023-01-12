@@ -1,0 +1,17 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.ChannelDetail {
+    min-height: 95vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    &_Section {
+        display: flex;
+        padding: 2;
+        
+    }
+}

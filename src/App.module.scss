@@ -1,0 +1,10 @@
+@import "./scss/themes.scss";
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.App, html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-colour;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,21 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.SearchFeed {
+    overflow-y: auto;
+    height: 90vh;
+    display: flex;
+    flex: 2;
+    flex-direction: column; 
+
+    &_Header {
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 2px 20px 20px 20px;
+        color: $main-text-colour;
+        
+        &_Category {
+            color: $main-theme-colour;
+        }
+    }
+}

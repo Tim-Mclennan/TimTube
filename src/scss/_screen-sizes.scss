@@ -1,0 +1,14 @@
+
+/* Preset viewport sizes for easier use of media queries.*/
+
+/* It should be noted that it is important to design websites and web applications using a mobile-first design approach. Using this approach warrants easier styling and editing. 
+
+Furthermore,  the use of mobile phones has accelerated over the years and is becoming one of the most popular technologies to access web pages and apps. Accoring to a study from Statcounter, people use their phones 58 times a day on average. 
+
+Applying a mobile first design will also mean the page will display faster on smaller devices. */
+
+/* resolution sizes sourced from https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more */
+
+$mobile: 320px;
+$tablet: 480px;
+$laptop: 768px;

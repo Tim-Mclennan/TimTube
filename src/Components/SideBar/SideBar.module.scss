@@ -1,0 +1,49 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: auto;
+    gap: 3px;
+    margin: 0 1px;
+
+    @media only screen and (max-width: $tablet) {
+        height: 95%;
+        flex-direction: row;
+    }
+
+    &_Btn {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 20px;
+        background-color: $bg-colour;
+        color: $main-text-colour;
+        border-radius: 15px;
+        height: 50px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        gap: 15px;
+
+
+
+        &_Red {
+            background-color: $main-theme-colour;
+        }
+
+        &:hover {
+            background-color: $main-theme-colour;
+        }
+
+        &_Icon {
+            font-size: 1.5rem;
+
+            &_Red {
+                color: $main-theme-colour;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

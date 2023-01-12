@@ -1,0 +1,35 @@
+@import "../../scss/themes.scss";
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    background: $bg-colour;
+    top: 0;
+    justify-content: space-between;
+    z-index: 10;
+
+    &_Logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        &_Para {
+            color: $main-text-colour;
+            font-weight: 500;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            margin: 5px 5px 10px 10px;
+
+            &_Icon {
+                color: $main-theme-colour;
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

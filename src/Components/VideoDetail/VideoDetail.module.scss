@@ -1,0 +1,77 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.VideoDetail {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: row;
+
+    &_Container {
+        display: flex;
+        width: 75vw;
+
+        @media only screen and (min-width: $tablet) {
+            flex-direction: column;
+        }
+
+        &_Video {
+            display: flex;
+            flex: 1;
+            width: 75vw;
+
+            &_Content {
+                width: 100%;
+                position: sticky;
+                top: 85px;
+
+                &_Player {
+                    width: 100%;
+                }
+
+                &_Title {
+                    color: $main-text-colour;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    padding: 10px;
+                }
+
+                &_Channel {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    color: $main-text-colour;
+                    padding: 5px 10px;
+
+                    &_Title {
+                        color: $main-text-colour;
+                        font-size: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        &_Icon {
+                            color: gray;
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    &_Count {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        align-items: center;
+                        color: rgb(216, 216, 216);
+                    }
+                }
+            }
+        }
+    }
+
+    &_Suggestions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        width: 100%;
+    }
+}

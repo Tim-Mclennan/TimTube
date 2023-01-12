@@ -1,0 +1,49 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.Feed {
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
+    width: 100vw;
+
+    @media only screen and (max-width: $tablet) {
+        flex-direction: column;
+    }
+
+    &_Categories {
+        height: 100%;
+        border-right: 1px solid rgb(43, 43, 43);
+        padding: 2;
+
+        &_Copyright {
+            color: $main-text-colour;
+        }
+    }
+
+    &_Videos {
+        overflow-y: auto;
+        height: 90vh;
+        display: flex;
+        flex: 2;
+        flex-direction: column; 
+
+        // hides scrollbar
+        -ms-overflow-style: none;  /* IE and Edge */
+         scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+          }
+
+        &_Header {
+            font-weight: 600;
+            font-size: 2rem;
+            margin: 2px 20px 20px 20px;
+            color: $main-text-colour;
+
+            &_Category {
+                color: $main-theme-colour;
+            }
+        }
+    }
+}
