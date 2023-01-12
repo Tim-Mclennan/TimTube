@@ -1,5 +1,6 @@
 # Hi, I'm Tim! 👋
 
+![image](https://user-images.githubusercontent.com/102727510/212031188-7ea0f44a-7c3c-45dc-bccd-3146619a548f.png)
 
 # TimTube (YouTube clone)
 
